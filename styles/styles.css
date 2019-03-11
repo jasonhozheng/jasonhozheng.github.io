@@ -224,7 +224,8 @@ h2 {
     width: 100vw; }
   .header-color ul {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    flex-direction: row-reverse; }
   .header-nav li {
     padding-right: 0px; } }
 

@@ -270,6 +270,7 @@ h2
 	{
 		display: flex;
 		justify-content: space-evenly;
+		flex-direction: row-reverse;
 	}
 	.header-nav li{
 		padding-right: 0px;
