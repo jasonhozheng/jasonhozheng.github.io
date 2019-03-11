@@ -201,6 +201,9 @@ h2 {
 .logo-img2 {
   display: none; }
 
+.header-paragraph {
+  text-align: center; }
+
 @media only screen and (max-width: 600px) {
   .header-text h1 {
     font-size: 15vw; }
