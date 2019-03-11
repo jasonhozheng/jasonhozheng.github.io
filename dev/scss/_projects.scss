@@ -1,0 +1,87 @@
+.project{
+    position: relative;
+}
+.project-text1, .project-text2
+{
+ padding: 0;
+ margin: 0;
+ position: absolute;
+ font-size: 3.2vh;
+ border-bottom: solid 2px black;
+}
+.project-text1
+{
+transform: rotate(-90deg);
+transform-origin: left top;
+top: 114px;
+left: 74px;
+display: block;
+}
+
+.project-text2 {
+    left: 116px;
+    top: 25px;
+    display: block;
+}
+.project-grid
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.project01, .project02, .project03
+{
+    margin: .5%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    background-color: black;
+}
+// hidden text
+.project-title
+{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: white;
+    z-index: 100;
+    background-color: black;
+    padding: 1%;
+    font-family: $headingfont;
+}
+.text 
+{
+    position: absolute;
+    bottom: 0;
+    left: -170px;
+    top: 50%; 
+    right: 50%;
+    width: 70%;
+    text-align: center;
+    height: auto;
+    max-height: 80px;
+    font-family: $fontparagraph;
+    padding: 2%;
+    color: black;
+}
+@media only screen and (max-width: 600px) {
+    .project-grid
+    {
+        display: block;
+    }
+    .project-title
+    {
+        left: 90px;
+    }
+    .project01, .project02, .project03
+    {
+        background-color: $header;
+    }
+    .text
+    {
+        left: -280px;
+    }
+    }

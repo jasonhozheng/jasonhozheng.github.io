@@ -1,0 +1,73 @@
+#tools-header
+{
+    text-align: center;
+}
+// testing
+.diamond-grid
+{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+.item
+{
+    width: 220px;
+    height: 220px;
+    background: $header;
+    transition: 0.5s;
+    font-size: 80%;
+}
+.item h2
+{
+    position: absolute;
+	top: 50%; right: 50%;
+	transform: translate(50%,-50%);
+}
+.item .fab, .item .fas
+{
+    position: absolute;
+    top: 35%; right: 50%;
+	transform: translate(50%,-50%);
+}
+.tools-icons
+{
+    position: relative;
+}
+.diamond-grid2
+{
+    display: none;
+}
+// mobile
+@media only screen and (max-width: 600px) {
+    .diamond-grid
+    {
+        display: none;
+    }
+    .diamond-grid2
+    {
+        display: block;
+    }
+    .diamond-flex
+    {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .short-text
+    {
+        font-size: 80%;
+        text-align: center;
+    }
+    .items
+    {
+        background-color: $header;
+        width: 100px;
+        height: auto;
+        margin: 5px;
+    }
+    #triangle-bottomright
+    {
+        display: none;
+    }
+
+  }

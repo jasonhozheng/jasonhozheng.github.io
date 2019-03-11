@@ -1,0 +1,107 @@
+.tyler-div
+{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    display: flex;
+    max-width: 100%;
+}
+.tyler-img1
+{
+    max-height: 400px;
+    
+}
+.tyler-img2
+{
+    max-height: 400px;
+    // float: right;
+}
+.intro
+{
+    text-align: center;
+}
+.tyler-tools
+{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.intro p
+{
+    line-height: 1.5;
+    margin: 55px;
+    font-family: $fontparagraph;
+}
+.tyler-design
+{
+    background-color: $header;
+    position: relative;
+    padding-top: 70px;
+}
+.tyler-text
+{
+    font-size: 10.5px;
+}
+.tyler-text1
+{
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    top: 120px;
+    left: 101px;
+    display: block;
+}
+.tyler-text2
+{
+    top: 27px;
+    left: 137px;
+    display: block;
+}
+.tyler-text1, .tyler-text2
+{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-size: 25px;
+    border-bottom: solid 2px black;
+}
+.tyler-border
+{
+    border-bottom: solid 3px $triangle;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.tyler-text3
+{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .tyler-img1
+    {
+        max-height: 150px;
+        padding-left: 10%;
+        padding-right: 5%;
+        
+    }
+    .tyler-img2
+    {
+        max-height: 200px;
+        margin: auto;
+        position: absolute;
+        left: 30%;
+        // float: right;
+    }
+    .tyler-div
+    {
+        display: block;
+    }
+    .tyler-text1, .tyler-text2
+    {
+        display: none;
+    }
+    .tyler-text3
+    {
+        display: block;
+        margin-top: 0;
+    }
+    }

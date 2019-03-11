@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="diamond-grid/diamonds.css">
+	<link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16">
+	<style>
+			@import url('https://fonts.googleapis.com/css?family=Exo:400,700|Oswald:300,400|PT+Sans');
+	</style>
+	<script src="scripts/script.js"></script>
+
+    <title>Jason Zheng</title>
+</head>
+<body>
+	<!-- start of header section -->
+		<header>
+			<!-- start of nav -->
+			<nav class="header-nav">
+				<div class="header-color">
+					<ul>
+						<li style="float:left"><a href="index.html"><img class="logo-img" src="./images/logo_transparent.png" alt=""></a></li>
+						<li class="nav-hover"><a href=#contact>Contact</a></li>
+						<li class="nav-hover"><a href=#project>Projects</a></li>
+						<li class="nav-hover"><a href=#about-me>About</a></li>
+						<li class="nav-hover"><a href=#contact>Contact</a></li>
+						<li class="nav-hover"><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header-text">
+				<h2 class="header-text1"><span class="uniquefont">Web Designer/Developer</span></h2>
+				<div class="bubble"></div>
+				<div class="bubble"></div>
+				<div class="bubble"></div>
+				<div id="bubble-hidden" class="bubble"></div>
+				<div id="bubble-hidden" class="bubble"></div>
+				<div id="bubble-hidden" class="bubble"></div>
+				<div class="bubble"></div>
+				<div class="bubble"></div>
+				<div class="bubble"></div>
+				<div class="bubble"></div>
+				<h1 class="header-text2">Jason Zheng</h1>
+				<p class="header-paragraph">Hi i'm Jason and welcome to my portfolio</p>
+			</div>
+		</header>
+		<div class="wrapper">
+		<!-- about me section -->
+		<section class="about-me" id="about-me">
+			<div class="wtf" id="triangle-topleft">
+				<h2 class="about-text1">About</h2>
+				<h2 class="about-text2">Me</h2>
+			</div>
+			<!-- start of about me articles -->
+			<article class="about-paragraph">
+				<p>Hi, my name is Jason Zheng a web designer and as well as a front end web developer located in the Vancouver, BC area. I am devoted to designing, styling, and coding stunning websites. </p>
+			</article>
+				<div id="triangle-bottomright1">
+					
+				</div>
+		<!-- </section> -->
+		<!-- tools I use section -->
+		<!-- <section class="tools" id="tools"> -->
+			<h2 id="tools-header">Tools I Use</h2>
+			<img src="images/border.png" alt="">
+			<div class="tools-icons">
+				
+					<div class="diamond-grid2">
+						<div class="diamond-flex">
+							<div class="items">
+								<i class="fab fa-html5 fa-4x"></i>
+								<h2 class="short-text">HTML</h2>
+							</div>
+							<div class="items">
+								<i class="fab fa-css3-alt fa-4x"></i>
+								<h2 class="short-text">CSS</h2>
+							</div>
+						</div>
+						<div class="diamond-flex">
+							<div class="items">
+								<i class="fab fa-js-square fa-4x"></i>
+								<h2 class="short-text">JAVASCRIPT</h2>
+							</div>
+							<div class="items">
+								<i class="fab fa-adobe fa-4x"></i>
+								<h2 class="short-text">PHOTOSHOP</h2>
+							</div>
+						</div>
+						<div class="diamond-flex">
+							<div class="items">
+									<i class="fas fa-edit fa-4x"></i>
+								<h2 class="short-text">BALSAMIQ</h2>
+							</div>
+							<div class="items">
+								<i class="fab fa-invision fa-4x"></i>
+								<h2 class="short-text">INVISION</h2>
+							</div>
+						</div>
+						<div class="diamond-flex">
+							<div class="items">
+									<i class="fab fa-adobe fa-4x"></i>
+									<h2 class="short-text">ILLUSTRATOR</h2>
+							</div>
+						</div>
+						</div>
+
+
+					<div class="diamond-grid">
+							<div class="item">
+								<i class="fab fa-html5 fa-4x"></i>
+								<h2>HTML</h2>
+							</div>
+							<div class="item">
+								<i class="fab fa-css3-alt fa-4x"></i>
+								<h2>CSS</h2>
+							</div>
+							<div class="item">
+								<i class="fab fa-js-square fa-4x"></i>
+								<h2>JAVASCRIPT</h2>
+							</div>
+							<div class="item">
+								<i class="fab fa-adobe fa-4x"></i>
+								<h2>PHOTOSHOP</h2>
+							</div>
+							<div class="item">
+									<i class="fas fa-edit fa-4x"></i>
+								<h2>BALSAMIQ</h2>
+							</div>
+							<div class="item">
+								<i class="fab fa-invision fa-4x"></i>
+								<h2>INVISION</h2>
+							</div>
+							<div class="item">
+									<i class="fab fa-adobe fa-4x"></i>
+									<h2>ILLUSTRATOR</h2>
+							</div>
+						</div>
+						<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+						<script src="diamond-grid/jquery.diamonds.js"></script>
+						<script>
+							$(".diamond-grid").diamonds({
+							size : 190, // Size of diamonds in pixels. Both width and height. 
+							gap : 10, // Pixels between each square.
+							hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
+							autoRedraw : true, // Auto redraw diamonds when it detects resizing.
+							itemSelector : ".item" // the css selector to use to select diamonds-items.
+							});
+						</script>
+						<div id="triangle-bottomright"></div>
+			</div>
+
+			
+
+		</section>
+		<!-- projects section -->
+		<section class="project" id="project">
+			<!-- <div class="wtf" id="triangle-topleft"> -->
+				<h2 class="project-text1">My</h2>
+				<h2 class="project-text2">Projects</h2>
+			</div>
+			<!-- start of projects -->
+			<div class="project-grid"> 
+				<a href="tyler.html">	
+					<div class="project01">
+						<h3 class="project-title">Tyler The Creator</h3>
+						<p class="text">Fan made website showcasing the tracks and his upcoming</p>
+						<img src="images/artist.jpeg" alt="">
+					</div>
+				</a>
+				<a href="">	
+					<div class="project02">
+						<h3 class="project-title">Art Portfolio</h3>
+						<p class="text">A website showcasing my Art pieces and process</p>
+						<img src="images/art.jpeg" alt="">
+					</div>
+				</a>
+				<a href="">
+					<div class="project03">
+						<h3 class="project-title">PRS Canada</h3>
+						<p class="text">A business portfolio showcasing PRS Canada</p>
+						<img src="images/recycle.jpeg" alt="">
+					</div>
+				</a>
+			</div>
+			<!-- <div id="triangle-bottomright"></div> -->
+		</section>
+	</div>
+		<!-- start of footer section -->
+		<footer>
+			<!-- contact section -->
+			<section class="contact" id="contact">
+				<h1>Get In Touch</h1>
+				<p>Got a question or want to connect with me?</p>
+				<div class="contact-nav"> 
+					<a href="mailto: jasonzheng858@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a>
+					<a href=""><i class="fab fa-facebook fa-2x"></i></a>
+					<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+				</div>
+			</section>
+		</footer>  
+
+</body>
+</html>
